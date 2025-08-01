@@ -1,0 +1,146 @@
+.bg-images{
+   margin-top: 24%;
+}
+.swiper-button-next,
+.swiper-button-prev{
+   color: var(--main-color);
+}
+
+.background{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.bg-images .image{
+    width: 80%;
+    height: 80%;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   margin: 10px auto;
+   gap: 30px;
+}
+
+.bg-images .image img{
+      transition: all 0.3s ease;
+   margin-bottom: 15px;
+}
+.bg-images .image img:hover{
+    border: 1px solid var(--main-color);
+}
+.bg-images .col svg{
+    color: yellow;
+}
+
+
+
+/* product phone section */
+
+
+
+
+
+.parent{
+    border: 1px solid var(--main-color);
+    background-color: var(--white);
+    position: relative;
+   width: 300px;
+    padding: 25px 50px;
+    margin: 20px auto;
+    max-width: 1350px;
+
+}
+
+
+.parent img{
+    width: auto;
+    height: 150px;
+    margin: 10px auto;
+}
+
+
+
+.parent h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: #222;
+}
+.parent .stars{
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.parent .price{
+    color: var(--main-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
+.parent .icons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 25px;
+}
+
+.parent .icons span{
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    color: var(--main-color);
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.parent .icons #cart.active{
+    background-color: var(--main-color);
+    color: var(--white);
+    pointer-events: none;
+}
+
+.parent .icons #favorite.active{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+
+
+
+.parent .details-btn{
+  background:none;
+  color: var(--main-color);
+    
+}
+
+
+
+
+
+@media(max-width:778px){
+    
+.bg-images .image{
+   grid-template-columns: repeat(2,1fr);
+}
+
+
+}

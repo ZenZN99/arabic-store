@@ -1,0 +1,230 @@
+.navbar {
+    padding: 10px;
+  background-color: var(--white);
+  width: 100%;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.navbar img{
+    width: 50px;
+}
+.navbar .search-box{
+    width: 270px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid var(--main-color);
+}
+
+.navbar .search-box input{
+    padding: 5px 15px 5px 20px;
+    border-radius: 30px 0 0 30px;
+    width: 240px;
+    height: 40px;
+}
+
+.navbar .search-box button{
+    border-radius: 0 30px 30px 0;
+    background-color: var(--main-color);
+    width: 70px;
+    height: 40px;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.navbar .nav-links{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a{
+    color: black;
+    transition: all 0.3s ease;
+
+}
+
+.navbar .nav-links a:hover{
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+
+
+.navbar .icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .icons .icon{
+    position: relative;
+}
+.navbar .icons .icon a{
+    font-size: 25px;
+    color: black;
+}
+.navbar .icons .icon .count{
+ position: absolute;
+  top: -5px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.menu-products{
+  position: relative;
+
+
+}
+
+.menu-products .pointer{
+    font-size: 30px;
+}
+
+.menu-products .nav-list{
+      position: absolute;
+      right: -160px;
+      background-color: var(--white);
+      padding: 10px  100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid var(--main-color);
+      margin-top: 15px;
+      width: 100%;
+    clip-path: polygon(0 0 ,100% 0 , 100% 0 , 0 0);
+    transition: all 0.3s ease;
+    z-index: 1000;
+      
+}
+
+.menu-products.active .nav-list{
+    clip-path: polygon(0 0 ,100% 0 , 100% 100% , 0 100%);
+}
+
+.menu-products .nav-list a{
+    color: black; 
+    padding: 20px 30px;
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid var(--main-color);
+    transition: all 0.3s ease;
+
+}
+
+.menu-products .nav-list a:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+    transform: translateY(-5px);
+}
+
+
+
+
+/* search styled */
+
+
+.search-wrapper {
+  position: relative;
+}
+
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.suggestions-list li {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestions-list li:hover {
+  background-color: #f9f9f9;
+}
+
+.suggestions-list img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.suggestions-list span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+
+@media(max-width:1200px){
+    .menu-products .nav-list{
+      right: -10px;     
+}
+
+}
+
+@media(max-width:778px){
+    .navbar .container{
+        flex-direction: column;
+        line-height: 3;
+    }
+     .menu-products{
+        width: 100%;
+    text-align: center;
+     }
+    .menu-products .nav-list{
+       right: 0;
+    }
+    .navbar .icons .icon .count{
+ position: absolute;
+  top: -5px;
+  margin-top: 20px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    
+}

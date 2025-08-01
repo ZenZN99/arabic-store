@@ -1,0 +1,51 @@
+.favorite{
+    margin: 40px 30px;
+}
+
+.favorite h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+ .favorite-product .no-fav{
+    font-size: 23px;
+
+}
+
+.favorite   img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite  .icon-favorite{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.favorite-product{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+
+.favorite p,h3{
+    text-align: center;
+}
+
+
+
+@media(max-width:778px){
+
+ .favorite-product .no-fav{
+    text-align: center;
+   padding: 0 20px;
+    font-size: 18px;
+ }
+}
